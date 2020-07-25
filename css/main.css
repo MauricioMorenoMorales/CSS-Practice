@@ -1,0 +1,105 @@
+/*
+       CCCCCCCCCCCCC   SSSSSSSSSSSSSSS    SSSSSSSSSSSSSSS 
+     CCC::::::::::::C SS:::::::::::::::S SS:::::::::::::::S
+   CC:::::::::::::::CS:::::SSSSSS::::::SS:::::SSSSSS::::::S
+  C:::::CCCCCCCC::::CS:::::S     SSSSSSSS:::::S     SSSSSSS
+ C:::::C       CCCCCCS:::::S            S:::::S            
+C:::::C              S:::::S            S:::::S            
+C:::::C               S::::SSSS          S::::SSSS         
+C:::::C                SS::::::SSSSS      SS::::::SSSSS    
+C:::::C                  SSS::::::::SS      SSS::::::::SS  
+C:::::C                     SSSSSS::::S        SSSSSS::::S 
+C:::::C                          S:::::S            S:::::S
+ C:::::C       CCCCCC            S:::::S            S:::::S
+  C:::::CCCCCCCC::::CSSSSSSS     S:::::SSSSSSSS     S:::::S
+   CC:::::::::::::::CS::::::SSSSSS:::::SS::::::SSSSSS:::::S
+     CCC::::::::::::CS:::::::::::::::SS S:::::::::::::::SS 
+        CCCCCCCCCCCCC SSSSSSSSSSSSSSS    SSSSSSSSSSSSSSS   
+*/
+
+
+:root{
+     --green-color:#6ec427;
+     --dark-green: #0e4300;
+     --space: 10px ;
+     --box-shadow:0 0 4px 0px #949494;
+     /*Tipografia*/
+     --normal:12px
+}
+
+body{
+     margin: 0;
+     padding: 0;
+     font-size: 15px;
+     font-family: Helvetica, sans-serif;
+     font-family: 'Open Sans', sans-serif;
+}
+nav{
+     display: flex;     
+     background-color: var(--green-color);
+     padding: 10px;
+     color: white;
+     justify-content: space-between;
+     align-items: center;
+     padding: 0 20px;
+}
+nav ul{
+     display: flex;
+
+}
+nav li{
+     padding-right: 10px;
+     list-style: none;
+}
+nav li a{
+     text-decoration: none;
+     color: var(--dark-green);
+     font-weight: bold;
+}
+nav li a:hover{
+     color: white;
+     text-decoration: underline;
+}
+/*--------------------Main Section--------------------*/
+.main_section{
+     margin: 5%;
+     display: flex;
+     justify-content: center;
+}
+.main-section h1{
+     text-align: center;
+}
+.products{
+     background-image: url('../images/images/curve.png') ;
+     height: calc(100vh - 250px);
+     background-size: cover;
+     background-position: center top;
+     background-position-y: 200px;
+     background-repeat: no-repeat;
+     display: flex;
+     justify-content: center;
+}
+.product{
+     padding: 10px;
+     height: 200px;
+}
+.product .content{
+     background-color: white;
+     padding: 20px;
+     box-shadow: 0 0 4px 0px #949494;
+}
+.img_content{
+     text-align: center;
+}
+.main-button{
+     background-color: var(--green-color);
+     width: 100%;
+     padding: 10px;
+     font-size: 17px;
+     color: white;
+     border: none;
+     cursor: pointer;
+}
+.main-button:hover{
+     background-color: var(--dark-green);
+}
